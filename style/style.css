@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #3ed8ff;
+}
+
+div#box {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    transform: translate(5%, 10%);
+
+    background-color: rgb(150, 232, 253);
+    border-radius: 20px;
+    width: 270px;
+    height: 550px;
+    color: white;
+}
+
+div#items {
+    margin: 40px;
+    text-align: center;
+
+    & img {
+        width: 200px;
+        margin-bottom: 50px;
+    }
+}
