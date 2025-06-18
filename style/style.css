@@ -14,19 +14,53 @@ div#box {
     margin: auto;
     transform: translate(5%, 10%);
 
-    background-color: rgb(150, 232, 253);
+    background: linear-gradient(to bottom, #b7efff, #51dcff);
     border-radius: 20px;
     width: 270px;
     height: 550px;
-    color: white;
+    color: #3b7786;
+
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.114);
 }
 
 div#items {
     margin: 40px;
     text-align: center;
 
-    & img {
+    & img { 
         width: 200px;
-        margin-bottom: 50px;
+        margin: 0px;
     }
+
+    & #temp {
+        color: #c9f4ff;
+        margin: 10px;
+        font-size: 100px;
+        letter-spacing: -15px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
+    }
+
+    & #localTime {
+        color: #c9f4ff;
+        font-size: 1.2em;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
+    }
+}
+
+input#txtloc {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+
+    color: #c9f4ff;
+    background-color: #3ed8ff;
+
+    text-align: center;
+    outline: 0;
+    font-size: 1.7em;
+}
+
+#txtloc::placeholder {
+    color: #c9f4ff;
+    text-align: center;
 }

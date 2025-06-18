@@ -1,3 +1,10 @@
+function pressEnter() {
+    let location = document.getElementById('txtloc')
+}
+
+pressEnter()
+
+
 function testeApi() {
     const key = '70befa9fc4dc4fe0a3c140404251006'
     fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=London&aqi=no`)
