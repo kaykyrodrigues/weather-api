@@ -35,8 +35,8 @@ div#items {
     & #temp {
         color: #c9f4ff;
         margin: 10px;
-        font-size: 100px;
-        letter-spacing: -15px;
+        font-size: 60px;
+        letter-spacing: -5px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 
