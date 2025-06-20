@@ -19,6 +19,7 @@ div#box {
     width: 270px;
     height: 550px;
     color: #3b7786;
+    overflow: hidden;
 
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.114);
 }
@@ -27,30 +28,40 @@ div#items {
     margin: 40px;
     text-align: center;
 
-    & img { 
-        width: 200px;
-        margin: 0px;
-    }
-
-    & #temp {
-        color: #c9f4ff;
-        margin: 10px;
-        font-size: 60px;
-        letter-spacing: -3px;
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
-    }
-
     & #region {
-        margin-bottom: 0px;
+        margin: 10px 20px 0 0;;
         color: #c9f4ff;
         font-size: 1.2em;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 
     & #localTime {
-        margin-top: 0px;
+        margin: 0 20px 10px 0;
         color: #c9f4ff;
         font-size: 1.2em;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3ed8ff;
+    margin-left: -30px;
+    border-radius: 40px;
+    width: 250px;
+    height: 70px;
+
+
+    & img {
+        width: 70px;
+    }
+
+    & #temp {
+        color: #c9f4ff;
+        margin: 5px 5px 0 0px;
+        font-size: 50px;
+        letter-spacing: -3px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 }
@@ -59,6 +70,7 @@ input#txtloc {
     width: 200px;
     border: none;
     border-radius: 10px;
+    margin-left: -20px;
 
     color: #c9f4ff;
     background-color: #3ed8ff;
