@@ -11,15 +11,17 @@ function pressEnter(event) {
 
             let region = document.getElementById('region')
             let localTime = document.getElementById('localTime')
+            let img = document.getElementById('img')
             let temp = document.getElementById('temp')
 
             const key = '70befa9fc4dc4fe0a3c140404251006'
             fetch(`https://api.weatherapi.com/v1/current.json?key=70befa9fc4dc4fe0a3c140404251006&q=${loc}&aqi=no`)
                 .then(response => response.json())
                 .then(data => {
-                    region.innerHTML = data.location.region
-                    localTime.innerHTML = data.location.localtime
-                    temp.innerHTML = data.current.temp_c + '°'
+                    region.innerHTML = data.location.region;
+                    localTime.innerHTML = data.location.localtime;
+                    img.src = data.current.condition.icon;
+                    temp.innerHTML = data.current.temp_c + '°';
                 })
                 .catch(err => {
                     console.log('Error: ' + err)
