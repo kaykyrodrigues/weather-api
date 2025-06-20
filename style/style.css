@@ -36,11 +36,19 @@ div#items {
         color: #c9f4ff;
         margin: 10px;
         font-size: 60px;
-        letter-spacing: -5px;
+        letter-spacing: -3px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
+    }
+
+    & #region {
+        margin-bottom: 0px;
+        color: #c9f4ff;
+        font-size: 1.2em;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 
     & #localTime {
+        margin-top: 0px;
         color: #c9f4ff;
         font-size: 1.2em;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
