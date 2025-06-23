@@ -18,10 +18,11 @@ function pressEnter(event) {
             fetch(`https://api.weatherapi.com/v1/current.json?key=70befa9fc4dc4fe0a3c140404251006&q=${loc}&aqi=no`)
                 .then(response => response.json())
                 .then(data => {
-                    region.innerHTML = data.location.region;
+                    region.innerHTML = `<img src="images/locationpoint.png" alt="Ponto de localização" id="locationPoint">` + data.location.region + ', ' + data.location.country;
                     localTime.innerHTML = data.location.localtime;
                     img.src = data.current.condition.icon;
                     temp.innerHTML = data.current.temp_c + '°';
+                    condition.innerHTML = data.current.condition.text;
                 })
                 .catch(err => {
                     console.log('Error: ' + err)
