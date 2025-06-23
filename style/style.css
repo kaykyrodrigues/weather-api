@@ -8,21 +8,21 @@
 
 body {
     height: 97.8vh;
-    background: linear-gradient(to top, #0280fe, #779dfe);
+    background: linear-gradient(to bottom, #0280fe, #779dfe);
 }
 
 input#txtloc {
     width: 200px;
     border: none;
     border-radius: 10px;
-    margin-left: -20px;
+    margin: 0px auto 10px;
 
     color: #ffffff;
-    background-color: #0280fe00;
+    background-color: #0280fe;
 
     text-align: center;
     outline: 0;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 #txtloc::placeholder {
@@ -38,7 +38,7 @@ div#box {
 
     background: linear-gradient(to bottom, #ffffff3e, #ffffff3e);
     border-radius: 20px;
-    width: 270px;
+    width: 280px;
     height: 550px;
     color: #3b7786;
     overflow: hidden;
@@ -51,15 +51,16 @@ div#items {
     text-align: center;
 
     & #region {
-        margin: 10px 30px 0 0;
-        ;
+        margin: auto;
+        /* margin: 10px 30px 0 0; */
         color: #ffffff;
         font-size: 1.2em;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 
     & #localTime {
-        margin: 0 20px -10px 0;
+        margin: auto;
+        /* margin: 0 20px -10px 0; */
         color: #ffffffaa;
         font-size: 1em;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
@@ -67,34 +68,36 @@ div#items {
 
     & #locationPoint {
         width: 15px;
-        margin: 5px 2px 0 0px;
+        margin: auto;
+        /* margin: 5px 2px 0 0px; */
     }
 }
 
 section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #3ed8ff00;
-    margin-left: -30px;
+    margin: 0 auto 0;
     border-radius: 40px;
 
 
 
     & img {
-        width: 60px;
-        margin: 20px 3px 0 20px;
+        width: 70px;
+        margin: 10px -10px 0;
     }
 
     & #temp {
         color: #ffffff;
-        margin: 5px 30px 0 0px;
+        margin: auto;
+        /* margin: 5px 30px 0 0px; */
         font-size: 60px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
     }
 }
 
-#condition {
+& #condition {
     color: #ffffff;
     font-size: 1.2em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.099);
+    margin: -8px auto;
 }

@@ -22,7 +22,7 @@ function pressEnter(event) {
                     localTime.innerHTML = data.location.localtime;
                     img.src = data.current.condition.icon;
                     temp.innerHTML = data.current.temp_c + '°';
-                    condition.innerHTML = data.current.condition.text;
+                    condition.innerHTML = 'Time condition: ' + data.current.condition.text; '.'
                 })
                 .catch(err => {
                     console.log('Error: ' + err)
