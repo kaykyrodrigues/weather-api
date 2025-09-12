@@ -11,35 +11,16 @@ body {
     background: linear-gradient(to bottom, #0280fe, #779dfe);
 }
 
-input#txtloc {
-    width: 200px;
-    border: none;
-    border-radius: 10px;
-    margin: 0px auto 10px;
-
-    color: #ffffff;
-    background-color: #0280fe;
-
-    text-align: center;
-    outline: 0;
-    font-size: 1.5em;
-}
-
-#txtloc::placeholder {
-    color: #ffffff;
-    text-align: center;
-}
-
 div#box {
     display: flex;
     flex-flow: row wrap;
-    margin: auto;
-    transform: translate(5%, 10%);
+    
+    justify-content: center;
 
     background: linear-gradient(to bottom, #ffffff3e, #ffffff3e);
     border-radius: 20px;
-    width: 280px;
-    height: 550px;
+    width: 480px;
+    height: 300px;
     color: #3b7786;
     overflow: hidden;
 
@@ -71,6 +52,25 @@ div#items {
         margin: auto;
         /* margin: 5px 2px 0 0px; */
     }
+}
+
+input#txtloc {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+
+    color: #ffffff;
+    background-color: #0280fe;
+
+    text-align: center;
+    outline: 0;
+    font-size: 1.5em;
+}
+
+#txtloc::placeholder {
+    color: #ffffff;
+    text-align: center;
 }
 
 section {
