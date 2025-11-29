@@ -1,6 +1,6 @@
 # Interface de Clima/Tempo
 
-Projeto desenvolvido com HTLM5, CSS3 e JavaScript puro, que implementa uma API de clima-tempo para conferir o status meteorologico de um determinado local.
+Projeto desenvolvido com HTML5, CSS3 e JavaScript puro, que implementa uma API de clima-tempo para conferir o status meteorologico de um determinado local.
 
 O funcionamento é simples e ocorre da seguinte forma:
 
