@@ -1,4 +1,4 @@
-# Interface de Clima/Tempo
+# Weather Forecast
 
 Projeto desenvolvido com HTML5, CSS3 e JavaScript puro, que implementa uma API de clima-tempo para conferir o status meteorologico de um determinado local.
 
