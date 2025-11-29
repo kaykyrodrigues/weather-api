@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/mobile.css" />
+  </head>
+  <body>
+    <main>
+      <section id="search-bar">
+        <h1>Search Forecast</h1>
+        <div id="search-wrapper">
+          <input
+            type="text"
+            name="txtloc"
+            id="txtloc"
+            aria-labelledbyl="Search location"
+            placeholder="Search here"
+            autocomplete="off"
+          />
+          <button id="btn-search">
+            <img src="../images/search-logo.png" alt="Search Icon" />
+          </button>
+        </div>
+      </section>
+
+      <section id="items">
+        <div id="weather-zone">
+          <div id="region-point">
+            <span
+              ><img
+                src="../images/locationpoint.png"
+                alt="Ponto de localização"
+                id="locationPoint"
+            /></span>
+            <p id="region">Region</p>
+
+            <p id="localTime">Local Time</p>
+          </div>
+          <div id="sets-condition">
+            <img
+              src="../images/weathericon.png"
+              alt="Weather icon"
+              id="weather-icon"
+            />
+            <p id="condition">Time Condition</p>
+          </div>
+        </div>
+        <div id="temperatures">
+          <p id="temp-celsius">0°</p>
+          <hr />
+          <p id="temp-f">0F</p>
+        </div>
+      </section>
+
+      <section id="forecast-section" aria-labelledby="forecast-title">
+        <ul id="status-forecast"></ul>
+      </section>
+    </main>
+
+    <script src="./weatherapi.js"></script>
+  </body>
+</html>

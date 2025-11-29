@@ -1,0 +1,25 @@
+{
+  "name": "projeto-clima",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido com HTLM5, CSS3 e JavaScript puro, que implementa uma API de clima-tempo para conferir o status meteorologico de um determinado local.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaykyrodrigues/weather-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kaykyrodrigues/weather-api/issues"
+  },
+  "homepage": "https://github.com/kaykyrodrigues/weather-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
